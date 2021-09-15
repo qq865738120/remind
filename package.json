@@ -1,0 +1,19 @@
+{
+  "name": "remind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "remind.js",
+  "scripts": {
+    "start": "npm install && npm run run",
+    "run": "node remind.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dayjs": "^1.10.6",
+    "log4js": "^6.3.0",
+    "node-schedule": "^2.0.0",
+    "qs": "^6.10.1"
+  }
+}
