@@ -46,7 +46,7 @@ function wordTemplate(type, holiday) {
   let result = template[random(0, 1)]
   if (holiday.nextHolidayName) {
     result =  result + `\n\n明天是${holiday.nextHolidayName}，祝大家节日快乐！`
-  } else if (holiday.nextWorkdayName) {
+  } else if (holiday.nextWorkdayName && !holiday.nextWorkdayName.includes('周')) {
     result = result + `\n\n明天是${holiday.nextWorkdayName}，记得调好闹钟哦！`
   }
   return result;
@@ -56,7 +56,7 @@ function wordTemplate(type, holiday) {
  * 工时提醒1
  * @param {*} params
  */
-function workTimeRemind1() {
+async function workTimeRemind1() {
   let job = schedule.scheduleJob("0 50 17 * * *",async () => {
     const holiday = await checkHoliday()
 
@@ -79,12 +79,12 @@ async function weeklyRemind1() {
   let job = schedule.scheduleJob("0 5 18 ? * 5", async () => {
     const holiday = await checkHoliday()
 
-    if (holiday.isHoliday && holiday.nextWorkdayName) {
+    if (holiday.isHoliday || holiday.nextWorkdayName) {
       logger.info("weeklyRemind1 holiday", holiday);
       return
     }
 
-    const content = "到点了，明天是周六哦！是写周报还是交罚款，你自己定。";
+    const content = `到点了，明天是周六哦！是写周报还是交罚款，你自己定。`;
     logger.info("weeklyRemind1", content);
     postMessage(content, mentionedMobileList);
   });
@@ -94,11 +94,10 @@ async function weeklyRemind1() {
  * 周报提醒2
  * @param {*} params
  */
-function weeklyRemind2() {
+async function weeklyRemind2() {
   let job = schedule.scheduleJob("0 0 21 ? * 7", async () => {
     const holiday = await checkHoliday()
-
-    if (!holiday.isHoliday || holiday.nextWorkdayName) {
+    if (!(holiday.isHoliday && holiday.nextWorkdayName)) {
       logger.info("weeklyRemind2 holiday", holiday);
       return
     }
@@ -250,12 +249,12 @@ async function checkHoliday() {
     nextWorkdayName: '',
     isHoliday: false,
   }
-  const date = dayjs('2021-5-7')
+  const date = dayjs()
   const res = await getHolidays(date.format('YYYY-MM-DD'))
   const res2 = await getHolidays(date.add(1, 'day').format('YYYY-MM-DD'))
-  if (res && res2) {
+  if (res2) {
     result.nextHolidayName = res2.type.type === 2 ? res2.type.name : ''
-    result.nextWorkdayName = res2.type.type === 3 ? res2.type.name : ''
+    result.nextWorkdayName = res2.type.type === 3 || res2.type.type === 0 ? res2.type.name : ''
     result.isHoliday = [1,2].includes(res.type.type)
   }
   logger.info('checkHoliday', date.format('YYYY-MM-DD'), result)

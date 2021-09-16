@@ -1,0 +1,666 @@
+15:21:48 INFO - 启动脚本
+15:21:48 INFO - 启动成功
+15:22:18 ERROR - Error: getaddrinfo ENOTFOUND timor.tech
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26) {
+  errno: -3008,
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'timor.tech',
+  config: {
+    url: 'http://timor.tech/api/holiday/info/2021-09-21',
+    method: 'get',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'User-Agent': 'axios/0.21.1'
+    },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: null,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      protocol: 'http:',
+      path: '/api/holiday/info/2021-09-21',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'timor.tech',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/holiday/info/2021-09-21'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/holiday/info/2021-09-21 HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Host: timor.tech\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/holiday/info/2021-09-21',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'timor.tech',
+      protocol: 'http:',
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://timor.tech/api/holiday/info/2021-09-21',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+15:22:48 ERROR - Error: getaddrinfo ENOTFOUND timor.tech
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26) {
+  errno: -3008,
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'timor.tech',
+  config: {
+    url: 'http://timor.tech/api/holiday/info/2021-09-22',
+    method: 'get',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'User-Agent': 'axios/0.21.1'
+    },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: null,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      protocol: 'http:',
+      path: '/api/holiday/info/2021-09-22',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'timor.tech',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/holiday/info/2021-09-22'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/holiday/info/2021-09-22 HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Host: timor.tech\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/holiday/info/2021-09-22',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'timor.tech',
+      protocol: 'http:',
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://timor.tech/api/holiday/info/2021-09-22',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+15:22:48 INFO - checkHoliday 2021-09-21 { nextHolidayName: '', nextWorkdayName: '', isHoliday: false }
+15:22:48 INFO - weeklyRemind2 holiday { nextHolidayName: '', nextWorkdayName: '', isHoliday: false }
+15:23:04 INFO - 启动脚本
+15:23:04 INFO - 启动成功
+15:23:04 ERROR - Error: getaddrinfo ENOTFOUND timor.tech
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26) {
+  errno: -3008,
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'timor.tech',
+  config: {
+    url: 'http://timor.tech/api/holiday/info/2021-09-21',
+    method: 'get',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'User-Agent': 'axios/0.21.1'
+    },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: null,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      protocol: 'http:',
+      path: '/api/holiday/info/2021-09-21',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'timor.tech',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/holiday/info/2021-09-21'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/holiday/info/2021-09-21 HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Host: timor.tech\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/holiday/info/2021-09-21',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'timor.tech',
+      protocol: 'http:',
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://timor.tech/api/holiday/info/2021-09-21',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+15:23:04 ERROR - Error: getaddrinfo ENOTFOUND timor.tech
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26) {
+  errno: -3008,
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'timor.tech',
+  config: {
+    url: 'http://timor.tech/api/holiday/info/2021-09-22',
+    method: 'get',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'User-Agent': 'axios/0.21.1'
+    },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: null,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      protocol: 'http:',
+      path: '/api/holiday/info/2021-09-22',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'timor.tech',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/holiday/info/2021-09-22'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/holiday/info/2021-09-22 HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Host: timor.tech\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/holiday/info/2021-09-22',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'timor.tech',
+      protocol: 'http:',
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://timor.tech/api/holiday/info/2021-09-22',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+15:23:04 INFO - checkHoliday 2021-09-21 { nextHolidayName: '', nextWorkdayName: '', isHoliday: false }
+15:23:04 INFO - weeklyRemind2 holiday { nextHolidayName: '', nextWorkdayName: '', isHoliday: false }
+15:23:25 INFO - 启动脚本
+15:23:25 INFO - 启动成功
+15:23:26 INFO - checkHoliday 2021-09-21 { nextHolidayName: '', nextWorkdayName: '', isHoliday: true }
+15:23:26 INFO - weeklyRemind2 holiday { nextHolidayName: '', nextWorkdayName: '', isHoliday: true }
+15:25:26 INFO - 启动脚本
+15:25:26 INFO - 启动成功
+15:25:27 INFO - checkHoliday 2021-09-21 { nextHolidayName: '', nextWorkdayName: '周三', isHoliday: true }
+15:25:27 INFO - weeklyRemind2 周报还没写的赶紧写，再不写就要乐捐了！
+15:25:27 ERROR - ReferenceError: res is not defined
+    at postMessage (/Users/zhengwenjun/project/remind/remind.js:195:17)
+    at weeklyRemind2 (/Users/zhengwenjun/project/remind/remind.js:108:5)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+15:27:50 INFO - 启动脚本
+15:27:50 INFO - 启动成功
+15:27:51 INFO - checkHoliday 2021-10-10 { nextHolidayName: '', nextWorkdayName: '周一', isHoliday: true }
+15:27:51 INFO - weeklyRemind2 周报还没写的赶紧写，再不写就要乐捐了！
+15:27:51 ERROR - ReferenceError: res is not defined
+    at postMessage (/Users/zhengwenjun/project/remind/remind.js:195:17)
+    at weeklyRemind2 (/Users/zhengwenjun/project/remind/remind.js:108:5)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+15:29:52 INFO - 启动脚本
+15:29:52 INFO - 启动成功
+15:29:53 INFO - checkHoliday 2021-09-17 { nextHolidayName: '', nextWorkdayName: '中秋节前调休', isHoliday: false }
+15:29:53 INFO - workTimeRemind1 老铁，你工时没写！
+
+明天是中秋节前调休，记得调好闹钟哦！
+15:29:53 ERROR - ReferenceError: res is not defined
+    at postMessage (/Users/zhengwenjun/project/remind/remind.js:194:17)
+    at workTimeRemind1 (/Users/zhengwenjun/project/remind/remind.js:70:5)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+15:30:26 INFO - 启动脚本
+15:30:26 INFO - 启动成功
+15:30:27 INFO - checkHoliday 2021-09-16 { nextHolidayName: '', nextWorkdayName: '周五', isHoliday: false }
+15:30:27 INFO - workTimeRemind1 快下班了，记得写工时哦！
+
+明天是周五，记得调好闹钟哦！
+15:30:27 ERROR - ReferenceError: res is not defined
+    at postMessage (/Users/zhengwenjun/project/remind/remind.js:194:17)
+    at workTimeRemind1 (/Users/zhengwenjun/project/remind/remind.js:70:5)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+15:31:27 INFO - 启动脚本
+15:31:27 INFO - 启动成功
+15:31:28 INFO - checkHoliday 2021-09-16 { nextHolidayName: '', nextWorkdayName: '周五', isHoliday: false }
+15:31:28 INFO - workTimeRemind1 快下班了，记得写工时哦！
+15:31:28 ERROR - ReferenceError: res is not defined
+    at postMessage (/Users/zhengwenjun/project/remind/remind.js:194:17)
+    at workTimeRemind1 (/Users/zhengwenjun/project/remind/remind.js:70:5)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+15:31:39 INFO - 启动脚本
+15:31:39 INFO - 启动成功
+15:31:39 INFO - checkHoliday 2021-09-17 { nextHolidayName: '', nextWorkdayName: '中秋节前调休', isHoliday: false }
+15:31:39 INFO - workTimeRemind1 老铁，你工时没写！
+
+明天是中秋节前调休，记得调好闹钟哦！
+15:31:39 ERROR - ReferenceError: res is not defined
+    at postMessage (/Users/zhengwenjun/project/remind/remind.js:194:17)
+    at workTimeRemind1 (/Users/zhengwenjun/project/remind/remind.js:70:5)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+15:32:12 INFO - 启动脚本
+15:32:12 INFO - 启动成功
+15:32:13 INFO - checkHoliday 2021-09-25 { nextHolidayName: '', nextWorkdayName: '国庆节前调休', isHoliday: true }
+15:32:13 INFO - workTimeRemind1 holiday { nextHolidayName: '', nextWorkdayName: '国庆节前调休', isHoliday: true }
+15:32:42 INFO - 启动脚本
+15:32:42 INFO - 启动成功
+15:32:43 INFO - checkHoliday 2021-09-24 { nextHolidayName: '', nextWorkdayName: '', isHoliday: false }
+15:32:43 INFO - workTimeRemind1 老铁，你工时没写！
+15:32:43 ERROR - ReferenceError: res is not defined
+    at postMessage (/Users/zhengwenjun/project/remind/remind.js:194:17)
+    at workTimeRemind1 (/Users/zhengwenjun/project/remind/remind.js:70:5)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+15:32:50 INFO - 启动脚本
+15:32:50 INFO - 启动成功
+15:32:51 INFO - checkHoliday 2021-09-26 { nextHolidayName: '', nextWorkdayName: '周一', isHoliday: false }
+15:32:51 INFO - workTimeRemind1 老铁，你工时没写！
+15:32:51 ERROR - ReferenceError: res is not defined
+    at postMessage (/Users/zhengwenjun/project/remind/remind.js:194:17)
+    at workTimeRemind1 (/Users/zhengwenjun/project/remind/remind.js:70:5)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
