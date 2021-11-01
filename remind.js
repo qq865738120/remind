@@ -57,7 +57,7 @@ function wordTemplate(type, holiday) {
  * @param {*} params
  */
 async function workTimeRemind1() {
-  let job = schedule.scheduleJob("0 50 17 * * *",async () => {
+  let job = schedule.scheduleJob("0 20 17 * * *",async () => {
     const holiday = await checkHoliday()
 
     if (holiday.isHoliday) {
@@ -76,7 +76,7 @@ async function workTimeRemind1() {
  * @param {*} params
  */
 async function weeklyRemind1() {
-  let job = schedule.scheduleJob("0 5 18 ? * 5", async () => {
+  let job = schedule.scheduleJob("0 35 17 ? * 5", async () => {
     const holiday = await checkHoliday()
 
     if (holiday.isHoliday || holiday.nextWorkdayName) {
