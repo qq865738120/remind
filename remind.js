@@ -42,7 +42,7 @@ function random(min, max) {
 }
 
 function wordTemplate(type, holiday) {
-  const template = [`快下班了，记得写${type}哦！`, `老铁，你${type}没写！`];
+  const template = [`各位小伙伴记得按时填写${type}哦，不然一天的代码又白写了～`, `各位小伙伴记得按时填写${type}哦，不然一天的代码又白写了～`];
   let result = template[random(0, 1)]
   if (holiday.nextHolidayName) {
     result =  result + `\n\n明天是${holiday.nextHolidayName}，祝大家节日快乐！`
@@ -178,12 +178,13 @@ async function getAirQuality() {
 async function postMessage(content, mentioned_mobile_list) {
   try {
     const res = await axios.post(
-      `https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=58745899-dbd5-45bb-8921-bb1d9edb012c`,
+      `https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=931bc825-086f-410d-b3a5-680a0a73e984`,
       {
         msgtype: "text",
         text: {
           content: content,
-          mentioned_mobile_list: mentioned_mobile_list,
+          // mentioned_mobile_list: mentioned_mobile_list,
+          mentioned_list: ["@all"]
         },
       },
       {
